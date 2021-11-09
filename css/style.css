@@ -240,4 +240,111 @@ flex:1 1 auto;
   }
 }
 /*-------------------------------------------------------------------*/
+/*Друга секція*/
+.posts {
+  background-color: #EDF7FA;
+}
+.posts__body {
+  padding: 10px 0 32px 0;
+}
+.posts__titles {
+  display: flex;
+  justify-content: space-between;
+}
+.posts__titles h2{
+  font-family: 'Heebo';
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+.posts__titles a{
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 23px;
+  color: #00A8CC;
+  margin: auto 0;
+  text-decoration: underline;
+}
+.posts__row {
+  display: flex;
+  justify-content: space-between;
+}
+.post__item {
+  flex:0 1 48%;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 24px 27px 35px 23px;
+}
+.item__title {
+  font-family: 'Heebo';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+}
+.item__information {
+  display: flex;
+  font-family: 'Heebo';
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+  margin: 37px 0 21px 0;
+}
+.information__date {
+}
+.vertical__line {
+  height: 21px;
+  width: 1px;
+  background-color:#21243D;
+  margin: 0 27px;
+}
+.information__description {
+}
+.item__text {
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+@media(max-width:760px){
+  .posts__row{
+    flex-direction: column;
+    align-items: center;
+  }
+  .post__item{
+    max-width: 70%;
+    margin-bottom: 17px;
+  }
+  .post__item:last-child{
+    margin-bottom: 0;
+  }
+}
+@media(max-width:533px){
+  .post__item{
+    max-width: 100%;
+  }
+  .item__information{
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .item__title{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .vertical__line{
+    margin:0 7px;
+  }
+  .posts__titles{
+    justify-content: center;
+  }
+  .posts__titles h2{
+    font-size: 18px;
+    line-height: 60px;
+  }
+
+  .posts__titles a{
+    display: none;
+  }
+}
+/*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
