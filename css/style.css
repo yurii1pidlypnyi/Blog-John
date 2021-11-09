@@ -16,6 +16,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 .wrapper {
+  min-height: 100%;
+  display:flex;
+  flex-direction: column;
 }
 /*Верстка адаптивної шапки*/
 .header {
@@ -141,6 +144,100 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     overflow: hidden;
   }
 }
-
-
 /*----------------------------------------------------*/
+/*Контентна частина*/
+.content {
+flex:1 1 auto;
+}
+/*Перша секція*/
+.hello {
+}
+.container {
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.hello__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 135px 0 71px 0;
+  align-items: flex-start;
+}
+.hello__information {
+  padding: 29px 20px 0 0 ;
+}
+.hello__title {
+  max-width: 438px;
+  font-family: 'Heebo';
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+.hello__text {
+  margin-top: 45px;
+  margin-bottom: 38px;
+  max-width: 497px;
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+.hello__button{
+  display: inline-flex;
+  padding: 14px 20px;
+  background-color: #FF6464;
+  border-radius: 2px;
+}
+.hello__button a{
+  font-family: 'Heebo';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.hello__photo{
+  width: 243px;
+  height: 243px;
+}
+.hello__photo img{
+  border-radius: 50%;
+  box-shadow: -5px 15px 0 0 #EDF7FA;
+}
+
+@media(max-width:706px){
+  .hello__body{
+    padding: 33px 0 50px 0;
+  }
+  .hello__photo{
+    margin:auto 0;
+  }
+  .hello__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hello__text{
+    margin: 35px 0 ;
+  }
+}
+@media(max-width:500px){
+  .hello__photo img{
+    width: 170px;
+    height: 170px;
+  }
+  .hello__photo {
+    width: 170px;
+    height: 170px;
+  }
+  .hello__body{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .hello__information {
+    padding: 40px 35px 0 35px ;
+  }
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
