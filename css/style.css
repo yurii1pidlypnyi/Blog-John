@@ -391,6 +391,7 @@ h2 {
 .information__year {
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
   background: #142850;
   border-radius: 16px;
   font-family: 'Heebo';
@@ -579,3 +580,73 @@ h2 {
   }
 }
 /*-------------------------------------------------------------------------*/
+/*Сторінка Work-article*/
+
+.work-article__body {
+  padding: 93px 0px 27px 0px;
+}
+.work-article__title {
+  font-family: 'Heebo';
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 50px;
+  color: #21243D;
+  max-width: 500px;
+}
+.article__year {
+  background: #FF7C7C;
+}
+.content__text p {
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 37px;
+}
+.content__text h2 {
+  font-family: 'Heebo';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+  color: #21243D;
+}
+.content__text h3 {
+  font-family: 'Heebo';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+  color: #21243D;
+}
+.content__image {
+  width: 100%;
+  margin: 27px 0px;
+}
+.content__image:last-child{
+  margin-bottom: 0px;
+}
+.content__image img {
+  width: 100%;
+  height: 100%;
+}
+@media(max-width:500px) {
+  .work-article__body {
+    padding: 40px 8px 27px;
+  }
+  .work-article__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .article__shortview {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .content__text h2 {
+    font-size: 26px;
+    line-height: 60px;
+  }
+  .content__text h3 {
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
+/*-----------------------------------------------------------------------*/
