@@ -79,6 +79,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   color: #000000;
   transition: color 0.5s ease 0s;
 }
+.menu__link.active {
+  color: #FF6464;
+}
 .menu__link:hover {
   color: #FF6464;
 }
@@ -460,3 +463,83 @@ h2 {
   }
 }
 /*------------------------------------------------------*/
+
+/*Сторінка Blog*/
+
+.blog__container {
+  max-width: 702px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.blog__body {
+  padding: 93px 0px 83px 0px;
+}
+.blog__title {
+  font-family: 'Heebo';
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+.blog__news {
+  padding-top: 64px;
+}
+.blog__news .horizontal__line {
+  margin-top: 29px;
+  margin-bottom: 40px;
+}
+.blog__news .horizontal__line:last-child {
+  margin-bottom: 0px;
+}
+.news__title a {
+  font-family: 'Heebo';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+  transition: color 0.5s ease 0s;
+}
+.news__title a:hover {
+  color: #FF6464;
+}
+.news__information {
+  display: flex;
+  align-items: center;
+  font-family: 'Heebo';
+  font-size: 20px;
+  line-height: 29px;
+  margin: 22px 0px;
+}
+.information__day {
+  color: #21243D;
+}
+
+.information__author {
+  color: #8695A4;
+}
+.news__text {
+  font-family: 'Heebo';
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+@media(max-width:500px) {
+  .blog__body {
+    padding: 40px 8px 56px;
+  }
+  .blog__news {
+    padding-top: 40px;
+  }
+  .blog__title {
+    font-size: 30px;
+  }
+  .news__title a {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .news__information {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+/*---------------------------------------------------*/
