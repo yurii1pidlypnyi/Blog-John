@@ -77,6 +77,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   font-size: 20px;
   line-height: 29px;
   color: #000000;
+  transition: color 0.5s ease 0s;
+}
+.menu__link:hover {
+  color: #FF6464;
 }
 @media (max-width:500px){
   .header__body {
@@ -362,12 +366,16 @@ h2 {
 .row__textblock {
   padding-left: 18px;
 }
-.textblock__title {
+.textblock__title a {
   font-family: 'Heebo';
   font-weight: bold;
   font-size: 30px;
   line-height: 44px;
   color: #21243D;
+  transition: color 0.5s ease 0s;
+}
+.textblock__title a:hover {
+  color: #FF6464;
 }
 .textblock__information {
   display: flex;
