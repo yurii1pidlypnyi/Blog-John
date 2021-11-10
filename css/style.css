@@ -31,7 +31,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   margin: 0 auto;
   padding: 0 10px;
 }
-
+.other__container {
+  max-width: 702px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /*Верстка адаптивної шапки*/
 
 .header {
@@ -466,11 +470,6 @@ h2 {
 
 /*Сторінка Blog*/
 
-.blog__container {
-  max-width: 702px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 .blog__body {
   padding: 93px 0px 83px 0px;
 }
@@ -543,3 +542,40 @@ h2 {
   }
 }
 /*---------------------------------------------------*/
+/*Сторінка Works*/
+.page__title {
+  font-family: 'Heebo';
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+  justify-content: flex-start;
+}
+.page__body {
+  padding: 93px 0px 83px 0px;
+}
+.page__column {
+  padding-top: 64px;
+}
+.page__row {
+  padding-top: 0px;
+}
+.page__horizontal-line {
+  margin-top: 29px;
+  margin-bottom: 40px;
+}
+.page__horizontal-line:last-child {
+  margin-bottom: 0px;
+}
+@media(max-width:500px) {
+  .page__body {
+    padding: 40px 8px 56px;
+  }
+  .page__column {
+    padding-top: 40px;
+  }
+  .page__title {
+    font-size: 30px;
+  }
+}
+/*-------------------------------------------------------------------------*/
